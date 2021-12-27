@@ -1,0 +1,10 @@
+<input accept="image/*" id="image-file" type="file" />
+<label for="resolution">Resolution of texture (just number: 1024, 2048 etc)</label>
+<input type="number" id="resolution" min="1" max="4096" value="1024" />
+<input value="Generate texture" onclick="loadImage()" type="button">
+
+<div>
+    <canvas id="ogl-canvas" style="border: none" width="1024" height="1024"></canvas>
+</div>
+
+<script src="render.js"></script>
